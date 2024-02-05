@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('background-image-link-here');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1280px;
+        }
+
+        header li {
+            margin: 0 10px;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1280px;
+            padding: 100px 20px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main .portfolio-image {
+            width: 40%;
+            margin-right: 5%;
+        }
+
+        main .portfolio-image img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        main .portfolio-info {
+            width: 55%;
+        }
+
+        main .portfolio-info h1 {
+            margin-bottom: 20px;
+        }
+
+        main .portfolio-info p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        @media (max-width: 1280px) {
+            main .portfolio-image {
+                width: 50%;
+                margin-right: 0;
+            }
+
+            main .portfolio-info {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header ul {
+                flex-direction: column;
+            }
+
+            header li {
+                margin: 10px 0;
+            }
+
+            main .portfolio-image {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            main .portfolio-info {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="portfolio-image">
+            <img src=""C:\Users\HP\Desktop\Full Stack 2024\client\HTML\WhatsApp_Image_2024-01-24_at_11.28.24_5dbee65e-removebg-preview.png"" alt="Your picture">
+        </div>
+
+        <div class="portfolio-info">
+            <h1>Welcome to my Portfolio</h1>
+            <p>I am a web developer with experience in HTML, CSS, and JavaScript. I specialize in creating responsive and user-friendly websites.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
